@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Orders - ALLMERCH</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            @media (max-width: 991.5px) {
+                .container.d-flex {
+                  gap: 0px !important;
+                }
+            }
+        </style>
+    </head>
+    <body style="background-color: #ececec;">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3e5452; padding: 0.5em 0.5em 1em 0.5em;">
+            <div class="container d-flex" style="gap: 30px;">
+                <a class="navbar-brand fw-bold" href="index_logged2.html">ALLMERCH</a>
+                <button class="navbar-toggler" style="border: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" style="padding: 0.2em 1em;">
+                            <a class="nav-link active" href="index_logged2.html">Shop</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown" style="padding: 0.2em 1em;">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Akun
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="login/account.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="login/login_user.html">Log out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-4 mb-4">
+            <h1 class="fw-bold mb-4">ORDERS</h1>
+            <div class="row">
+                <!-- Tambahan Order Card -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="container bg-light"  onclick="window.location.href='php/invoice.html'" style="border-radius: 5px; padding: 0.75em 0.75em; margin-bottom: 1em;">
+                        <div class="container" style="background-color: #ececec; border-radius: 2.5px; padding: 0.75em; text-align: center;">
+                            <p style="margin: 10px auto;">Delivered</p>
+                        </div>
+                        <div class="row" style="margin-top: 0.75em;">
+                            <div class="col-6" style="padding: 0 6px 12px 12px;">
+                                <img src="image/holo_1.png" alt="item" style="width: 100%;">
+                            </div>
+                        </div>
+                        <p class="fw-bold" style="margin-top: 0.5em; margin-bottom: 0;">1 Items</p>
+                        <p style="margin-top: 0; opacity: 80%;">Order #0001</p>
+                        <p style="font-weight: 500;">Rp800.000</p>
+                        <a href="php/invoice.html">
+                            <button class="btn w-100" style="background-color: #3e5452; color: #fff; padding: 10px 0; margin-top: 4px; margin-bottom: 4px;">Check Invoice</button>
+                        </a>
+                    </div>
+                </div>
+            
+                
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="container bg-light" onclick="window.location.href='php/invoice2.html'" style="border-radius: 5px; padding: 0.75em 0.75em; margin-bottom: 1em; cursor:pointer;">
+                        <div class="container" style="background-color: #ececec; border-radius: 2.5px;  padding: 0.75em 0.75em; text-align: center;">
+                            <p style="margin: 10px auto;">Confirmed</p>
+                        </div>
+                        <div class="row" style="margin-top: 0.75em;">
+                            <div class="col-lg-6 col-md-6" style="padding: 0 6px 12px 12px;">
+                                <img src="image/marine_1.png" alt="" style="width: 100%;">
+                            </div>
+                            <div class="col-lg-6 col-md-6" style="padding: 0 12px 12px 6px;">
+                                <img src="image/marine_0.png" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                        <p class="fw-bold" style="margin-top: 0.5em; margin-bottom: 0;">2 Items</p>
+                        <p style="margin-top: 0; opacity: 80%;">Order #0002</p>
+                        <p style="font-weight: 500;">Rp1.360.000</p>
+                        <a href="cart2.html">
+                            <button class="btn w-100" style="background-color: #3e5452; color: #fff; padding: 10px 0; margin-top: 4px; margin-bottom: 4px;">Buy again</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center py-3" style="background-color: #3e5452; color: white;">
+          <small>&copy; 2025 ALLMERCH. All rights reserved.</small>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

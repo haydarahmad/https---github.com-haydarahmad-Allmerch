@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>ALLMECRH</title>
+        <style>
+            li.nav-item:hover {
+                background: #2b3a39;
+            }
+            div.row div img:hover{
+                transform: translateY(-5px);
+            }
+            .btn:focus, .form-control:focus {
+                box-shadow: none;
+            }
+            .carousel{
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+            } 
+            .carousel-images{
+                display: flex;
+                transition: transform 0.3s;
+            }
+            .carousel-images img{
+                width: 100%;
+            }
+            .carousel-buttons{
+                display: flex;
+                justify-content: space-between;  
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                transform: translateY(-50%);
+                padding: 20px;
+            }
+            .carousel-buttons button{
+                border: none;
+                background-color: #000000a2;
+                color: white;
+                font-size: 1.5rem;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3e5452; padding: 0.5em 0.5em 1em 0.5em;">
+            <div class="container d-flex">
+                <a class="navbar-brand fw-bold" href="#">ALLMERCH</a>
+                <button class="navbar-toggler" style="border: none; color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav" style="gap: 1em; ">
+                        <li class="nav-item" style="padding: 0.2em 1em; border-radius: 8px">
+                            <a class="nav-link active" href="login/account.html">Account</a>
+                        </li>
+                        <li class="nav-item" style="padding: 0.2em 1em; border-radius: 8px">
+                            <a class="nav-link active" href="cart.html">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="carousel">
+            <div class="carousel-images" id="carousel-images">
+                <img id="Highlight-image" src="image/Highlight.png" alt="Highlight" class="img-fluid mb-5" style="width: 100%;">
+            </div>
+            <div class="carousel-buttons">
+                <button id="prevHighlight">&#10094</button>
+                <button id="nextHighlight">&#10095</button>
+            </div>
+        </div>
+        <div class="container mb-5">
+            <h1 class="display-5 fw-bold">BUNDLE</h1>
+            <p class="mb-4">Dapatkan harga terbaik untuk merchandise dari oshi kamu dengan membeli paket kami!</p>
+            <div class="container" style="padding-left: 0; padding-right: 0;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <a href="logged/bundle/bundle_nando.html" style="text-decoration: none; color: #000;">
+                            <img src="image/holo_1.png" alt="" style="width: 100%;">
+                            <p style="margin-top: 5px; margin-bottom: 0">PalVerse Pale. Spice and Wolf Holo Figure JAPAN OFFICIAL</p>
+                            <p style="margin-top: 0.5em; font-weight: bold;">Rp800.000</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <a href="logged/bundle/bundle_haydar.html" style="text-decoration: none; color: #000;">
+                            <img src="image/marine_0.png" alt="" style="width: 100%;">
+                            <p style="margin-top: 5px; margin-bottom: 0">Hololive Hosho Marine Mochidoll Plush Doll 18cm</p>
+                            <p style="margin-top: 0.5em; font-weight: bold;">Rp1.200.000</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <a href="logged/bundle/bundle_bangkit.html" style="text-decoration: none; color: #000;">
+                            <img src="image/pekora.png" alt="" style="width: 100%;">
+                            <p style="margin-top: 5px; margin-bottom: 0">Tamagotchi Nano & Plush Usada Pekora - Usada White Ver.</p>
+                            <p style="margin-top: 0.5em; font-weight: bold;">Rp1.200.000</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <a href="logged/bundle/bundle_rafa.html" style="text-decoration: none; color: #000;">
+                            <img src="image/holoLive.png" alt="" style="width: 100%;">
+                            <p style="margin-top: 5px; margin-bottom: 0">chibi-style rubber Hololive VTuber characters</p>
+                            <p style="margin-top: 0.5em; font-weight: bold;">Rp480.000</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="logged/bundle/bundle_section.html"><button class="btn" style="background-color: #fce477; margin: 10px 0">View All</button></a>
+            </div>
+        </div>
+        <div class="container mb-5">
+            <h1 class="display-5 fw-bold">TALENT HOLO (Ookami to Koushinryou)</h1>
+            <p class="mb-4">Dapatkan harga terbaik untuk merchandise dari oshi kamu dengan membeli paket kami!</p>
+            <div class="container" style="padding-left: 0; padding-right: 0;">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <a href="logged/bundle/bundle_nando.html" style="text-decoration: none; color: #000;">
+                            <img src="image/holo_1.png" alt="" style="width: 100%;">
+                            <p style="margin-top: 5px; margin-bottom: 0">PalVerse Pale. Spice and Wolf Holo Figure JAPAN OFFICIAL</p>
+                            <p style="margin-top: 0.5em; font-weight: bold;">Rp800.000</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <a href="logged/bundle/bundle_nando_figure.html" style="text-decoration: none; color: #000;">
+                            <img src="image/holo_4.png" alt="" style="width: 100%;">
+                            <p style="margin-top: 5px; margin-bottom: 0">Pop Up Parade Figure Holo - 2024 Ver. Spice and Wolf / Ookami to Koushinryou By Good Smile Company</p>
+                            <p style="margin-top: 0.5em; font-weight: bold;">Rp600.000</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <a href="logged/bundle/bundle_nando_rpg.html" style="text-decoration: none; color: #000;">
+                            <img src="image/holo_3.png" alt="" style="width: 100%;">
+                            <p style="margin-top: 5px; margin-bottom: 0">Spice and Wolf Lots of Holo Collection Figure RICH BOX ver. All 6 Set JAPAN</p>
+                            <p style="margin-top: 0.5em; font-weight: bold;">Rp450.000</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <a href="logged/bundle/bundle_nando_doll.html" style="text-decoration: none; color: #000;">
+                            <img src="image/holo_2.png" alt="" style="width: 100%;">
+                            <p style="margin-top: 5px; margin-bottom: 0">Spice and Wolf Holo Mini Figure gashapon</p>
+                            <p style="margin-top: 0.5em; font-weight: bold;">Rp220.000</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center py-3" style="background-color: #3e5452; color: white;">
+            <small>&copy; 2025 ALLMERCH. All rights reserved.</small>
+        </footer>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>
